@@ -2,7 +2,7 @@ const body = document.querySelector('body');
 const btnStart = document.querySelector('button[data-start');
 const btnStop = document.querySelector('button[data-stop');
 let intervalId = 0;
-
+btnStop.disabled = true;
 btnStart.addEventListener('click', () => {
   body.style.backgroundColor = getRandomHexColor();
   intervalId = setInterval(() => {
