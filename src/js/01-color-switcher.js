@@ -4,6 +4,7 @@ const btnStop = document.querySelector('button[data-stop');
 let intervalId = 0;
 
 btnStart.addEventListener('click', () => {
+  body.style.backgroundColor = getRandomHexColor();
   intervalId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
