@@ -8,7 +8,7 @@ const hour = document.querySelector('[data-hours]');
 const minute = document.querySelector('[data-minutes]');
 const second = document.querySelector('[data-seconds]');
 let interval = 0;
-
+btnStart.disabled = true;
 flatpickr('#datetime-picker', {
   enableTime: true,
   time_24hr: true,
