@@ -39,10 +39,10 @@ button.addEventListener('click', onClickStart);
 
 function onClickStart() {
   timerId = setInterval(() => {
+    date.disabled = true;
+    button.disabled = true;
     const choosenDate = new Date(date.value);
     const timeToFinish = choosenDate - Date.now();
-
-    button.disabled = true;
 
     let { days, hours, minutes, seconds } = convertMs(timeToFinish);
 
